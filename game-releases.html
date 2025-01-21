@@ -53,9 +53,9 @@
             cursor: pointer;
         }
 
-            .download-link:hover {
-                text-decoration: underline;
-            }
+        .download-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -64,18 +64,9 @@
 
         <div class="game-item">
             <div class="description">RPG Game</div>
-            <!-- Link that will trigger the download via JavaScript -->
-            <span class="download-link" onclick="downloadFile()">RPGgameAlpha0.01.0</span>
+            <!-- Link that will directly trigger the download -->
+            <a class="download-link" href="https://mega.nz/file/LZoCUYjY#3PZ9_5QJABtVJbXzrQsISgU4z9PSGqh5hRuTRIxkhyA?dl=1" download="RPGgameAlpha0.01.0.zip">Download RPGgameAlpha0.01.0.zip</a>
         </div>
     </div>
-
-    <script>
-        function downloadFile() {
-            var link = document.createElement('a');
-            link.href = "https://mega.nz/file/LZoCUYjY#3PZ9_5QJABtVJbXzrQsISgU4z9PSGqh5hRuTRIxkhyA?dl=1";
-            link.download = "RPGgameAlpha0.01.0"; // Suggested file name
-            link.click(); // Trigger the download
-        }
-    </script>
 </body>
 </html>
