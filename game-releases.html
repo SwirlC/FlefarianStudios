@@ -56,16 +56,48 @@
         .download-link:hover {
             text-decoration: underline;
         }
+
+        .additional-info {
+            font-size: 14px;
+            margin-top: 5px;
+            color: gray;
+            max-width: 300px; /* Limit line width */
+            line-height: 1.5; /* Add line spacing for better readability */
+        }
     </style>
 </head>
 <body>
     <div class="content-wrapper">
-        <div class="logo">Game Releases</div>
+        <div class="logo">Flefaria Studios - Game Releases</div>
 
+        <!-- First Project -->
         <div class="game-item">
             <div class="description">RPG Game</div>
-            <!-- Link that will directly trigger the download -->
             <a class="download-link" href="downloads/RPGgameAlpha0.01.0.zip" download="RPGgameAlpha0.01.0.zip">Download RPGgameAlpha0.01.0.zip</a>
+            <div class="additional-info">
+                V0.001.0 Discontinued Weather and mobility checks<br>
+                using collision boxes and overlapping event<br>
+                notifiers.
+            </div>
+        </div>
+
+        <!-- Second Project -->
+        <div class="game-item">
+            <div class="description">Shid57</div>
+            <a class="download-link" href="downloads/RPGgameAlpha0.01.0.zip" download="Shid57-Beta-0.1.8">Download Shid57-Beta-0.1.8</a>
+            <div class="additional-info">
+                Added Second level hand monsters can grab the player.<br>
+                Monster added "WEGA" will hunt the player.<br>
+                Added "Thief" hunts the player and robs 5 cereal from you.<br>
+                Added bear traps. They can stun any monster for 5 seconds.<br>
+                <br>
+                - Bugs Fixed:<br>
+                Thief now will steal only once instead of draining your cereal.<br>
+                Thief hitbox fixed.<br>
+                Hand hitbox is smaller.<br>
+                AI pathing: Monsters will forget the player if you are out of their<br>
+                sight for more than 3 seconds.
+            </div>
         </div>
     </div>
 </body>
